@@ -1,6 +1,10 @@
 <h2>Produtos</h2>
-<ul class="produtos">
-    <li *ngFor="let produto of produtos">
-        <span class="badge">{{produto.id}}</span> {{produto.name}}
-    </li>
-</ul>
+
+<div class="container">
+        <ul class="produtos">
+            <li *ngFor="let produto of produtos">
+                <span class="badge">{{produto.id}}</span> {{produto.name}}
+                <input type="text" class="form-control" id="name" required>
+            </li>
+        </ul>
+</div>
