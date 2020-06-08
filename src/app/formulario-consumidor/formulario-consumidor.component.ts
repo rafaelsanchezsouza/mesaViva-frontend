@@ -8,7 +8,7 @@ import { Pedido } from '../pedido';
 })
 export class FormularioConsumidorComponent implements OnInit {
 
-  model = new Pedido(18, 'Rosali', 'rosali@email.com', 'r. anônima', 'Chuck Overstreet');
+  model = new Pedido(18, ' ', ' ', ' ', ' ');
 
   constructor() { }
 

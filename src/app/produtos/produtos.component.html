@@ -4,7 +4,7 @@
         <ul class="produtos">
             <li *ngFor="let produto of produtos">
                 <span class="badge">{{produto.id}}</span> {{produto.name}}
-                <input type="text" class="form-control" id="'produto'+{{produto.id}}" required>
+                <input type="text" class="form-control" id="{{'produto' + produto}}" required>
             </li>
         </ul>
 </div>
