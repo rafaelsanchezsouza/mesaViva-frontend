@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { FormularioConsumidorComponent } from './formulario-consumidor/formulario-consumidor.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ScrollingModule } from '@angular/cdk/scrolling';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +17,9 @@ import { FormularioConsumidorComponent } from './formulario-consumidor/formulari
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
