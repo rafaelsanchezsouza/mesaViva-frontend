@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { FormularioConsumidorComponent } from './formulario-consumidor/formulario-consumidor.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { FormularioConsumidorComponent } from './formulario-consumidor/formulari
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
