@@ -1,2 +1,10 @@
-{{title}}
-<app-formulario-consumidor></app-formulario-consumidor>
+<!-- 
+
+{{title}} versão template
+<app-formulario-consumidor></app-formulario-consumidor> -->
+
+{{title}} versão dinâmica
+<div>
+  <h2>Job Application for Heroes</h2>
+  <app-formulario-dinamico-consumidor [questions]="questions$ | async"></app-formulario-dinamico-consumidor>
+</div>
