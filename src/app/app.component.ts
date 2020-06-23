@@ -1,7 +1,7 @@
 import { Component }       from '@angular/core';
 
-import { QuestionService } from './question.service';
-import { QuestionBase }    from './question-base';
+import { QuestionService } from './form-control/question.service';
+import { FormControlBase }    from './form-control/form-control-base';
 import { Observable }      from 'rxjs';
 
 @Component({
@@ -12,7 +12,7 @@ import { Observable }      from 'rxjs';
 })
 export class AppComponent {
   title = 'Formulário Terra Viva';
-  questions$: Observable<QuestionBase<any>[]>;
+  questions$: Observable<FormControlBase<any>[]>;
 
   constructor(service: QuestionService) {
     this.questions$ = service.getQuestions();

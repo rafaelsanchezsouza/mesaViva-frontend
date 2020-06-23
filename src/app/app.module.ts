@@ -6,8 +6,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormularioDinamicoConsumidorComponent } from './formulario-dinamico-consumidor/formulario-dinamico-consumidor.component';
-import { FormularioDinamicoPerguntaComponent } from './formulario-dinamico-pergunta/formulario-dinamico-pergunta.component';
+import { FormularioDinamicoConsumidorComponent } from './form/client-view/client-view.component';
+import { FormularioDinamicoPerguntaComponent } from './form/product/product.component';
 
 @NgModule({
   declarations: [

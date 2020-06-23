@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormularioDinamicoConsumidorComponent } from './formulario-dinamico-consumidor.component';
+import { FormularioDinamicoConsumidorComponent } from './client-view.component';
 
 describe('FormularioDinamicoConsumidorComponent', () => {
   let component: FormularioDinamicoConsumidorComponent;

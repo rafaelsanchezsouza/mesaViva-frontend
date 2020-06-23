@@ -1,7 +1,7 @@
 import { Injectable }       from '@angular/core';
 
 import { DropdownQuestion } from './dropdown-question';
-import { QuestionBase }     from './question-base';
+import { FormControlBase }     from './form-control-base';
 import { TextboxQuestion }  from './textbox-question';
 import { of } from 'rxjs';
 
@@ -11,7 +11,7 @@ export class QuestionService {
   // TODO: get from a remote source of question metadata
   getQuestions() {
 
-    let questions: QuestionBase<string>[] = [
+    let questions: FormControlBase<string>[] = [
 
       new TextboxQuestion({
         key: 'nome',

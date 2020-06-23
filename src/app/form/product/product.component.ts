@@ -1,14 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup }        from '@angular/forms';
 
-import { QuestionBase }     from '../question-base';
+import { FormControlBase }     from '../../form-control/form-control-base';
 
 @Component({
   selector: 'app-pergunta',
-  templateUrl: './formulario-dinamico-pergunta.component.html'
+  templateUrl: './product.component.html'
 })
 export class FormularioDinamicoPerguntaComponent {
-  @Input() question: QuestionBase<string>;
+  @Input() question: FormControlBase<string>;
   @Input() form: FormGroup;
   get isValid() { return this.form.controls[this.question.key].valid; }
 }

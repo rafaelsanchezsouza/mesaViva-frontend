@@ -1,6 +1,6 @@
-import { QuestionBase } from './question-base';
+import { FormControlBase } from './form-control-base';
 
-export class TextboxQuestion extends QuestionBase<string> {
+export class TextboxQuestion extends FormControlBase<string> {
     controlType = 'textbox';
     type: string;
 

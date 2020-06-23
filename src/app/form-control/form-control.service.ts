@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
-import { QuestionBase } from './question-base';
+import { FormControlBase } from './form-control-base';
 
 @Injectable({
   providedIn: 'root'
 })
-export class QuestionControlService {
+export class FormControlService {
 
   constructor() { }
 
-  toFormGroup(questions: QuestionBase<string>[] ) {
+  toFormGroup(questions: FormControlBase<string>[] ) {
     let group: any = {};
 
     questions.forEach(question => {
